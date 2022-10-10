@@ -1,0 +1,58 @@
+.deleteModal {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0002;
+  backdrop-filter: blur(2px);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.deledeModal__container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0009;
+  width: 100%;
+  max-width: 350px;
+}
+
+.deleteModal__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.deleteModal__body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.deleteModal__footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteModal__btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #555a88;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: filter 100ms ease;
+}

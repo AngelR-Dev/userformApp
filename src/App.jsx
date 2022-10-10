@@ -18,6 +18,9 @@ function App() {
   // Delete user modal
   const [deleteUser, setDeleteUser] = useState(false);
 
+  // Nombre usuario borrado
+  const [nameDeleted, setNameDeleted] = useState('')
+
   // get de todos los users
   const getAllUsers = () => {
     const URL = `${baseURL}/users/`;
@@ -97,6 +100,7 @@ function App() {
             setUpdateInfo={setUpdateInfo}
             setFormIsClose={setFormIsClose}
             setDeleteUser={setDeleteUser}
+            setNameDeleted={setNameDeleted}
           />
         ))}
       </div>
@@ -104,6 +108,7 @@ function App() {
         <DeleteUserModal
           setDeleteUser={setDeleteUser}
           updateInfo={updateInfo}
+          nameDeleted={nameDeleted}
         />
       )}
     </div>

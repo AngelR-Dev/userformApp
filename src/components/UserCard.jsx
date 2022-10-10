@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/UserCard.css";
 
-const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsClose, setDeleteUser }) => {
+const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsClose, setDeleteUser, setNameDeleted }) => {
   const handleEdit = () => {
     setUpdateInfo(user);
     setFormIsClose(false)
@@ -25,6 +25,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsClose, setDele
         <button className="user__btn" onClick={() => {
           deleteUserById(user.id)
           setDeleteUser(true)
+          setNameDeleted(`${user.first_name} ${user.last_name}`)
           }}>
           <i className="fa-solid fa-trash-can user__trash"></i>
         </button>

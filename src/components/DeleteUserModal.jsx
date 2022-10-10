@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles/DeleteUserModal.css'
 
-const DeleteUserModal = ({setDeleteUser, updateInfo}) => {
+const DeleteUserModal = ({setDeleteUser, updateInfo, nameDeleted}) => {
 
   console.log(updateInfo)
 
@@ -15,7 +15,7 @@ const DeleteUserModal = ({setDeleteUser, updateInfo}) => {
         </div>
         <div className="deleteModal__body">
           <p>
-            The user {``} was deleted succesfuly
+            The user {`"${nameDeleted}"`} was deleted successfully
           </p>
         </div>
         <div className="deleteModal__footer">
